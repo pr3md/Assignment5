@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FlickrMap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-signin-client_id" content="882995444413-ikv9oct3ijfr8j1snpcv26la663hnmbo.apps.googleusercontent.com">
+    <title>FlickrMap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/custom.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<!--
+1. Grab Location of the User
+2. Reverse Geo Code
+3. Get PhotoIDs from Flickr
+4. Get Photo Coordinates
+5. Plot Markers on Map
+-->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html#/">FlickrMap</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html#/"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+                <li><a href="index.html#/FlickrMap"><i class="glyphicon glyphicon-globe"></i> FlickrMap</a></li>
+                <li id="username"></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<ng-view></ng-view>
+
+</body>
+</html>

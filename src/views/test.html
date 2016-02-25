@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+http://localhost:63342/FlickrMap/#/access_token=ya29.kgI78iuOy3-8cLC1y2xWNR1kQbTPPLLRR753GqstPL1wjGiTAxTnHJFOmUEGZWTOOkzf7Q&token_type=Bearer&expires_in=3600
+<script>
+    var url ="http://localhost:63342/FlickrMap/#/access_token=ya29.kgI78iuOy3-8cLC1y2xWNR1kQbTPPLLRR753GqstPL1wjGiTAxTnHJFOmUEGZWTOOkzf7Q&token_type=Bearer&expires_in=3600";
+    var access = url.indexOf("=");
+    var token = url.indexOf("&");
+    alert()
+    var access_token = url.substr(access+1,token);
+    alert(access_token);
+</script>
+</body>
+</html>
